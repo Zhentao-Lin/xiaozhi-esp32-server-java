@@ -108,6 +108,7 @@ public class RoleController extends BaseController {
             role.setTtsProvider(param.getTtsProvider());
             role.setIsDefault(param.getIsDefault());
             role.setDatasetId(param.getDatasetId());
+            role.setMemoryType(param.getMemoryType());
             role.setUserId(CmsUtils.getUserId());
 
             roleService.update(role);
